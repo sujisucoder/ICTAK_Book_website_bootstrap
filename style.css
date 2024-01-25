@@ -2,6 +2,10 @@ body{
     margin: 0 !important;
 }
 
+.gold-button{
+  background-color: #e49756!important;
+
+}
 #navbar{
     background-image: linear-gradient(to right, #FF7755 , #FF5277)!important;
 }
