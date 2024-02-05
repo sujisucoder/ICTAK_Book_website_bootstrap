@@ -91,19 +91,21 @@
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="card">
               <div class="card-body py-5 px-md-5">
-                <form>
+                <form onsubmit="return validation()" >
              
   
                   <!-- Email input -->
                   <div class="form-outline p-3 mb-2">
-                    <label class="form-label " for="form3Example3">Email address</label>
-                    <input type="email" id="form3Example3" class="form-control border" />
+                    <label class="form-label " for="form3ExampleEmail">Email address</label>
+                    <input type="email" id="form-email" class="form-control border" />
+                    <span id="emailerror" class="text-danger font-weight-bold"></span>
                   </div>
   
                   <!-- Password input -->
                   <div class="form-outline p-3 mb-2">
-                    <label class="form-label" for="form3Example4">Password</label>
-                    <input type="password" id="form3Example4" class="form-control border" />
+                    <label class="form-label" for="form3ExamplePassword">Password</label>
+                    <input type="password" id="form-password" class="form-control border" />
+                    <span id="passworderror" class="text-danger font-weight-bold"></span>
                   </div>
   
                   <!-- Checkbox -->
@@ -247,6 +249,7 @@
 type="text/javascript"
 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
 ></script>
+<script src="../javascript/login.js"></script>
 
 </body>
 </html>
